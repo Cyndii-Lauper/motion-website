@@ -29,9 +29,9 @@ function Para() {
         scrub: 1,
       },
       opacity: 1,
-      duration: .5,
+      duration: 0.5,
       stagger: {
-        each: .1,
+        each: 0.1,
         from: "start",
       },
       ease: "power1.out",

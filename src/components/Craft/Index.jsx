@@ -6,31 +6,14 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Power4 } from "gsap/gsap-core";
 import { useGSAP } from "@gsap/react";
 
-
 gsap.registerPlugin(ScrollTrigger);
 
 function Craft() {
-  // const [isMobile, setIsMobile] = useState(false);
   const container = useRef(null);
   const textRef = useRef();
 
-  // useEffect(() => {
-  //     const handleResize = () => {
-  //       setIsMobile(window.innerWidth <= 768);
-  //     };
-
-  //     // Attach the event listener
-  //     window.addEventListener("resize", handleResize);
-
-  //     // Clean up the event listener when the component unmounts
-  //     return () => {
-  //       window.removeEventListener("resize", handleResize);
-  //     };
-  //   }, [isMobile]);
-
   useEffect(() => {
     if (!textRef.current) return;
-
     const para = textRef.current;
     const characters = para.textContent.split("");
     const clutter = characters
@@ -49,7 +32,6 @@ function Craft() {
         start: "top 100%",
         end: "bottom 50%",
         scrub: 0.5,
-        // markers: true,
       },
     });
 
