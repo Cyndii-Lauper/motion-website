@@ -10,7 +10,6 @@ import Real from "./components/Real/Index";
 import Team from "./components/Team/Index";
 import Footer from "./components/Footer/Index";
 import Lenis from "@studio-freight/lenis";
-import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   useEffect(() => {
@@ -52,7 +51,6 @@ function App() {
       <Para2 />
       <Capsule />
       <Footer />
-      <Analytics />
     </div>
   );
 }
